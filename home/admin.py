@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import BannerCards, Cards
+from .models import *
 # Register your models here.
 
-admin.site.register(BannerCards)
-admin.site.register(Cards)
+admin.site.register(BannerCard)
+admin.site.register(Card)

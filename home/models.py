@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class BannerCards(models.Model):
+class BannerCard(models.Model):
     title = models.CharField(max_length=200)
     category = models.CharField(max_length=100)
     content = models.TextField()
@@ -12,7 +12,7 @@ class BannerCards(models.Model):
     def __str__(self):
         return self.title
 
-class Cards(models.Model):
+class Card(models.Model):
     title = models.CharField(max_length=200)
     category = models.CharField(max_length=100)
     imageurl = models.CharField(max_length=1000)

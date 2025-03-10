@@ -52,8 +52,7 @@ header .left-header .bars .fa-bars {
   padding: 10px;
 }
 header .left-header .brand a img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
 }
 header .left-header nav > ul {
   display: flex;
