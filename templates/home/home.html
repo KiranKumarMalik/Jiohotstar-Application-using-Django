@@ -60,6 +60,59 @@
         </a>
         <!-- ----- -->
     </div>
+    <!-- Cards -->
+    <div class="recomandations">
+        <a href="#" target="_blank">Recommanded For You</a>
+        <div class="glide2 glide-c">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    {% for cards in card %}
+                    <li class="glide__slide">
+                        <a href="{{cards.targetUrl}}" class="card" target="_blank">
+                            <div class="image-holder">
+                                <img src="{{cards.imageurl}}" alt="">
+                            </div>
+                            <div class="title-card">
+                                <h2>{{cards.title}}</h2>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+             <!-- Arrows -->
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-angle-left" aria-hidden="true"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="recomandations">
+        <a href="#" target="_blank">Hit Movies</a>
+        <div class="glide3 glide-c">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                {% for cards in card %}
+                <li class="glide__slide">
+                    <a href="{{cards.targetUrl}}" class="card" target="_blank">
+                        <div class="image-holder">
+                            <img src="{{cards.imageurl}}" alt="">
+                        </div>
+                        <div class="title-card">
+                            <h2>{{cards.title}}</h2>
+                        </div>
+                    </a>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+        <!-- Arrows -->
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-angle-left" aria-hidden="true"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
 </section>
 {% endblock body %}
     
